@@ -20,7 +20,7 @@ namespace ConsoleApplication
         public static void Main()
         {
             Train train = new Train("0");
-            for (var instancias=1; instancias<100; instancias++)
+            for (var instancias=1; instancias<10000000; instancias++)
             {
             train = new Train(Convert.ToString(instancias));
             }
@@ -29,7 +29,7 @@ namespace ConsoleApplication
             Train t2=new Train("Last Train London");
             Train t3=new Train("Runaway Train");
             Console.WriteLine(Convert.ToString(t1==t2));
-            Console.WriteLine(Convert.ToString(t2==t3) );
+            Console.WriteLine(Convert.ToString(t2==t3));
         }
 
     }
